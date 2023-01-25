@@ -23,7 +23,7 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<CamelJockeyEntity>> CAMEL_JOCKEY = ENTITY_TYPES.register("cameljockey",
             () -> EntityType.Builder.<CamelJockeyEntity>of(CamelJockeyEntity::new, MobCategory.MONSTER)
-                    .sized(0.1F, 0.1F)
+                    .sized(0.3F, 0.3F)
                     .build(MoreCreeps.MODID + ":cameljockey"));
 
     public static void register(IEventBus eventBus){
