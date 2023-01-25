@@ -49,8 +49,6 @@ public class MoreCreeps
         ModSounds.register(modEventBus);
         ModEntityTypes.register(modEventBus);
 
-        GeckoLib.initialize();
-
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
@@ -64,15 +62,17 @@ public class MoreCreeps
     {
         if(event.getTab() == ModCreativeTab.MORE_CREEPS){
             event.accept(ModItems.BANDAID);
+            event.accept(ModItems.BLORP_COLA);
             event.accept(ModItems.GUN);
+            event.accept(ModItems.CAVEMAN_CLUB);
+
         }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+        LOGGER.info("MoreCreeps Rewritten loaded!");
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)

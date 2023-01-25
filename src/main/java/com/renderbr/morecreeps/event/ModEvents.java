@@ -27,6 +27,7 @@ public class ModEvents {
         public static void entityAttributes(EntityAttributeCreationEvent event){
             event.put(ModEntityTypes.CAMEL_JOCKEY.get(), CamelJockeyEntity.createAttributes().build());
         }
+
         @SubscribeEvent
         public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event){
             event.registerLayerDefinition(BulletModel.LAYER_LOCATION, BulletModel::createBodyLayer);

@@ -5,10 +5,45 @@
       "morecreeps:bandaid"
     ]
   },
+  "cavedrums": {
+    "subtitle": "morecreeps.subtitle.cavedrums",
+    "sounds": [
+      "morecreeps:cavedrums"
+    ]
+  },
   "bullet": {
     "subtitle": "morecreeps.subtitle.bullet",
     "sounds": [
-      "morecreeps:bullet1"
+      "morecreeps:bullet/bullet1",
+      "morecreeps:bullet/bullet2",
+      "morecreeps:bullet/bullet3",
+      "morecreeps:bullet/bullet4",
+      "morecreeps:bullet/bullet5"
+
+    ]
+  },
+  "blorpcola": {
+    "subtitle": "morecreeps.subtitle.blorpcola",
+    "sounds": [
+      "morecreeps:blorpcola"
+    ]
+  },
+  "jockey_death": {
+    "subtitle": "morecreeps.subtitle.jockey_death",
+    "sounds": [
+      "morecreeps:cameljockey/cameljockeydeath1",
+      "morecreeps:cameljockey/cameljockeydeath2",
+      "morecreeps:cameljockey/cameljockeydeath3"
+    ]
+  },
+  "jockey_hurt": {
+    "subtitle": "morecreeps.subtitle.jockey_hurt",
+    "sounds": [
+
+      "morecreeps:cameljockey/cameljockeyhurt1",
+      "morecreeps:cameljockey/cameljockeyhurt2",
+      "morecreeps:cameljockey/cameljockeyhurt3",
+      "morecreeps:cameljockey/cameljockeyhurt4"
     ]
   }
 }

@@ -17,6 +17,6 @@ public class ModCreativeTab {
    public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event)
    {
         MORE_CREEPS = event.registerCreativeModeTab(new ResourceLocation(MoreCreeps.MODID, "morecreeps"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.BANDAID.get())).title(Component.literal("More Creeps & Weirdos Rebooted")).build());
+                builder -> builder.icon(() -> new ItemStack(ModItems.BLORP_COLA.get())).title(Component.literal("More Creeps & Weirdos Rebooted")).build());
    }
 }
