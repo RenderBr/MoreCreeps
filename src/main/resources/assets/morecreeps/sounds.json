@@ -1,0 +1,14 @@
+{
+  "use_bandaid": {
+    "subtitle": "morecreeps.subtitle.use_bandaid",
+    "sounds": [
+      "morecreeps:bandaid"
+    ]
+  },
+  "bullet": {
+    "subtitle": "morecreeps.subtitle.bullet",
+    "sounds": [
+      "morecreeps:bullet1"
+    ]
+  }
+}
