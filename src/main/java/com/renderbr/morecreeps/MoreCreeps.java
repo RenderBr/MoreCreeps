@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import com.renderbr.morecreeps.entity.ModEntityTypes;
 import com.renderbr.morecreeps.entity.client.BulletRenderer;
 import com.renderbr.morecreeps.entity.client.CamelJockeyRenderer;
+import com.renderbr.morecreeps.entity.client.ThiefModel;
+import com.renderbr.morecreeps.entity.client.ThiefRenderer;
 import com.renderbr.morecreeps.item.ModItems;
 import com.renderbr.morecreeps.sounds.ModSounds;
 import net.minecraft.client.Minecraft;
@@ -81,6 +83,8 @@ public class MoreCreeps
         public static void onClientSetup(FMLClientSetupEvent event){
             EntityRenderers.register(ModEntityTypes.BULLET.get(), BulletRenderer::new);
             EntityRenderers.register(ModEntityTypes.CAMEL_JOCKEY.get(), CamelJockeyRenderer::new);
+            EntityRenderers.register(ModEntityTypes.THIEF.get(), ThiefRenderer::new);
+
         }
     }
 }

@@ -3,6 +3,7 @@ package com.renderbr.morecreeps.entity;
 import com.renderbr.morecreeps.MoreCreeps;
 import com.renderbr.morecreeps.entity.custom.BulletEntity;
 import com.renderbr.morecreeps.entity.custom.CamelJockeyEntity;
+import com.renderbr.morecreeps.entity.custom.ThiefEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -23,8 +24,13 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<CamelJockeyEntity>> CAMEL_JOCKEY = ENTITY_TYPES.register("cameljockey",
             () -> EntityType.Builder.<CamelJockeyEntity>of(CamelJockeyEntity::new, MobCategory.MONSTER)
-                    .sized(0.3F, 0.3F)
+                    .sized(1F, 1F)
                     .build(MoreCreeps.MODID + ":cameljockey"));
+
+    public static final RegistryObject<EntityType<ThiefEntity>> THIEF = ENTITY_TYPES.register("thief",
+            () -> EntityType.Builder.<ThiefEntity>of(ThiefEntity::new, MobCategory.MONSTER)
+                    .sized(1F, 1F)
+                    .build(MoreCreeps.MODID + ":thief"));
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);
