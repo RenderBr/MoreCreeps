@@ -37,6 +37,7 @@ public class ModEvents {
         public static void entityAttributes(EntityAttributeCreationEvent event){
             event.put(ModEntityTypes.CAMEL_JOCKEY.get(), CamelJockeyEntity.createAttributes().build());
             event.put(ModEntityTypes.THIEF.get(), ThiefEntity.createAttributes().build());
+            event.put(ModEntityTypes.LETTER_G.get(), ThiefEntity.createAttributes().build());
 
         }
 

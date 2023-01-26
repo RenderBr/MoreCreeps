@@ -3,6 +3,7 @@ package com.renderbr.morecreeps.entity;
 import com.renderbr.morecreeps.MoreCreeps;
 import com.renderbr.morecreeps.entity.custom.BulletEntity;
 import com.renderbr.morecreeps.entity.custom.CamelJockeyEntity;
+import com.renderbr.morecreeps.entity.custom.LetterGEntity;
 import com.renderbr.morecreeps.entity.custom.ThiefEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
@@ -29,8 +30,13 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<ThiefEntity>> THIEF = ENTITY_TYPES.register("thief",
             () -> EntityType.Builder.<ThiefEntity>of(ThiefEntity::new, MobCategory.MONSTER)
-                    .sized(1F, 1F)
+                    .sized(0.8F, 2F)
                     .build(MoreCreeps.MODID + ":thief"));
+
+    public static final RegistryObject<EntityType<LetterGEntity>> LETTER_G = ENTITY_TYPES.register("letterg",
+            () -> EntityType.Builder.<LetterGEntity>of(LetterGEntity::new, MobCategory.MONSTER)
+                    .sized(1F, 2F)
+                    .build(MoreCreeps.MODID + ":letterg"));
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

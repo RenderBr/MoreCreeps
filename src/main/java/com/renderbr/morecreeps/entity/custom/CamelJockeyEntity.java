@@ -47,6 +47,11 @@ public class CamelJockeyEntity extends Monster {
         this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
         this.addBehaviourGoals();
     }
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return ModSounds.JOCKEY_AMBIENT.get();
+    }
+
 
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
@@ -57,7 +62,6 @@ public class CamelJockeyEntity extends Monster {
     protected SoundEvent getDeathSound() {
         return ModSounds.JOCKEY_DEATH.get();
     }
-
     protected void addBehaviourGoals() {
         this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0D, false));
         this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
@@ -66,6 +70,6 @@ public class CamelJockeyEntity extends Monster {
     }
 
     public static AttributeSupplier.Builder createAttributes() {
-        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 20).add(Attributes.FOLLOW_RANGE, 35.0D).add(Attributes.MOVEMENT_SPEED, (double)0.5F).add(Attributes.ATTACK_DAMAGE, 3.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
+        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 20).add(Attributes.FOLLOW_RANGE, 35.0D).add(Attributes.MOVEMENT_SPEED, (double)0.3F).add(Attributes.ATTACK_DAMAGE, 3.0D).add(Attributes.ARMOR, 0.0D).add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
     }
 }

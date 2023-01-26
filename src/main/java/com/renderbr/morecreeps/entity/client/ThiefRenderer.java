@@ -26,7 +26,7 @@ public class ThiefRenderer extends MobRenderer<ThiefEntity, ThiefModel> {
     @Override
     protected void scale(ThiefEntity pLivingEntity, PoseStack pMatrixStack, float pPartialTickTime) {
         super.scale(pLivingEntity, pMatrixStack, pPartialTickTime);
-        pMatrixStack.scale(0.3F, 0.3F, 0.3F);
+        pMatrixStack.scale(1F, 1F, 1F);
     }
 
     @Override

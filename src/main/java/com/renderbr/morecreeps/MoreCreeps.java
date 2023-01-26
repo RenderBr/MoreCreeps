@@ -2,10 +2,7 @@ package com.renderbr.morecreeps;
 
 import com.mojang.logging.LogUtils;
 import com.renderbr.morecreeps.entity.ModEntityTypes;
-import com.renderbr.morecreeps.entity.client.BulletRenderer;
-import com.renderbr.morecreeps.entity.client.CamelJockeyRenderer;
-import com.renderbr.morecreeps.entity.client.ThiefModel;
-import com.renderbr.morecreeps.entity.client.ThiefRenderer;
+import com.renderbr.morecreeps.entity.client.*;
 import com.renderbr.morecreeps.item.ModItems;
 import com.renderbr.morecreeps.sounds.ModSounds;
 import net.minecraft.client.Minecraft;
@@ -33,6 +30,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
+
+import javax.swing.text.html.parser.Entity;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MoreCreeps.MODID)
@@ -84,6 +83,7 @@ public class MoreCreeps
             EntityRenderers.register(ModEntityTypes.BULLET.get(), BulletRenderer::new);
             EntityRenderers.register(ModEntityTypes.CAMEL_JOCKEY.get(), CamelJockeyRenderer::new);
             EntityRenderers.register(ModEntityTypes.THIEF.get(), ThiefRenderer::new);
+            EntityRenderers.register(ModEntityTypes.LETTER_G.get(), LetterGRenderer::new);
 
         }
     }

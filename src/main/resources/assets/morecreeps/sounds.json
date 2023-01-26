@@ -36,6 +36,17 @@
       "morecreeps:cameljockey/cameljockeydeath3"
     ]
   },
+  "jockey_ambient": {
+    "subtitle": "morecreeps.subtitle.jockey",
+    "sounds": [
+      "morecreeps:cameljockey/cameljockey1",
+      "morecreeps:cameljockey/cameljockey2",
+      "morecreeps:cameljockey/cameljockey3",
+      "morecreeps:cameljockey/cameljockey4",
+      "morecreeps:cameljockey/cameljockey5",
+      "morecreeps:cameljockey/cameljockey6"
+    ]
+  },
   "jockey_hurt": {
     "subtitle": "morecreeps.subtitle.jockey_hurt",
     "sounds": [
@@ -44,6 +55,56 @@
       "morecreeps:cameljockey/cameljockeyhurt2",
       "morecreeps:cameljockey/cameljockeyhurt3",
       "morecreeps:cameljockey/cameljockeyhurt4"
+    ]
+  },
+  "thief_steal": {
+    "subtitle": "morecreeps.subtitle.thief_steal",
+    "sounds": [
+      "morecreeps:thief/thiefsteal"
+    ]
+  },
+  "thief_nearby": {
+    "subtitle": "morecreeps.subtitle.thief_nearby",
+    "sounds": [
+      "morecreeps:thief/thief"
+    ]
+  },
+    "thief_hurt": {
+      "subtitle": "morecreeps.subtitle.thief_hurt",
+      "sounds": [
+        "morecreeps:thief/thiefhurt1",
+        "morecreeps:thief/thiefhurt2",
+        "morecreeps:thief/thiefhurt3",
+        "morecreeps:thief/thiefhurt4"
+      ]
+    },
+    "thief_death": {
+      "subtitle": "morecreeps.subtitle.thief_death",
+      "sounds": [
+        "morecreeps:thief/thiefdeath1"
+      ]
+    },
+  "thief_spotted": {
+    "subtitle": "morecreeps.subtitle.thief_spotted",
+    "sounds": [
+      "morecreeps:thief/thieffindplayer"
+    ]
+  },
+  "g_ambient": {
+    "subtitle": "morecreeps.subtitle.g_ambient",
+    "sounds": [
+      "morecreeps:g/g1",
+      "morecreeps:g/g2",
+      "morecreeps:g/g3",
+      "morecreeps:g/g4"
+    ]
+  },
+  "g_death": {
+    "subtitle": "morecreeps.subtitle.g_death",
+    "sounds": [
+      "morecreeps:g/gdeath1",
+      "morecreeps:g/gdeath2",
+      "morecreeps:g/gdeath3"
     ]
   }
 }
