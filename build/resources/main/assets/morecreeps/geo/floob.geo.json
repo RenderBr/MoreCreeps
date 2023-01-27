@@ -1,0 +1,81 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.FloobModel",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3.5, 35, -2], "size": [2, 2, 2], "uv": [0, 18]},
+						{"origin": [-0.5, 35, -2], "size": [2, 2, 2], "uv": [0, 18]},
+						{"origin": [-4, 26, -1], "size": [6, 12, 6], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "chest",
+					"parent": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5, 17, 0], "size": [8, 9, 4], "uv": [8, 19]}
+					]
+				},
+				{
+					"name": "arms",
+					"parent": "chest",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftarm",
+					"parent": "arms",
+					"pivot": [-6.5, 19.5, 2],
+					"cubes": [
+						{"origin": [-8, 13, 0.5], "size": [3, 13, 3], "uv": [36, 0]}
+					]
+				},
+				{
+					"name": "rightarm",
+					"parent": "arms",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [3, 13, 0.5], "size": [3, 13, 3], "uv": [36, 0]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "body",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "rightleg",
+					"parent": "legs",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.4, 1, 0], "size": [3, 16, 3], "uv": [24, 0]}
+					]
+				},
+				{
+					"name": "leftleg",
+					"parent": "legs",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4.3, 1, 0], "size": [3, 16, 3], "uv": [24, 0]}
+					]
+				}
+			]
+		}
+	]
+}

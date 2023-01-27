@@ -3,6 +3,7 @@ package com.renderbr.morecreeps;
 import com.mojang.logging.LogUtils;
 import com.renderbr.morecreeps.entity.ModEntityTypes;
 import com.renderbr.morecreeps.entity.client.*;
+import com.renderbr.morecreeps.entity.custom.FloobEntity;
 import com.renderbr.morecreeps.item.ModItems;
 import com.renderbr.morecreeps.sounds.ModSounds;
 import net.minecraft.client.Minecraft;
@@ -84,6 +85,8 @@ public class MoreCreeps
             EntityRenderers.register(ModEntityTypes.CAMEL_JOCKEY.get(), CamelJockeyRenderer::new);
             EntityRenderers.register(ModEntityTypes.THIEF.get(), ThiefRenderer::new);
             EntityRenderers.register(ModEntityTypes.LETTER_G.get(), LetterGRenderer::new);
+            EntityRenderers.register(ModEntityTypes.RAY.get(), RayRenderer::new);
+            EntityRenderers.register(ModEntityTypes.FLOOB.get(), FloobRenderer::new);
 
         }
     }

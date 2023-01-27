@@ -36,6 +36,11 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> G_AMBIENT = registerSoundEvent("g_ambient");
 
     public static final RegistryObject<SoundEvent> G_DEATH = registerSoundEvent("g_death");
+    public static final RegistryObject<SoundEvent> RAYGUN = registerSoundEvent("raygun");
+    public static final RegistryObject<SoundEvent> FLOOB_AMBIENT = registerSoundEvent("floob_ambient");
+    public static final RegistryObject<SoundEvent> FLOOB_DEATH = registerSoundEvent("floob_death");
+
+    public static final RegistryObject<SoundEvent> FLOOB_HURT = registerSoundEvent("floob_hurt");
 
     public static final RegistryObject<SoundEvent> THIEF_SPOT_PLAYER = registerSoundEvent("thief_spotted");
 

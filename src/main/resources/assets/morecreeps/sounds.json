@@ -90,6 +90,15 @@
       "morecreeps:thief/thieffindplayer"
     ]
   },
+  "raygun": {
+    "subtitle": "morecreeps.subtitle.raygun",
+    "sounds": [
+      "morecreeps:raygun/raygun1",
+      "morecreeps:raygun/raygun2",
+      "morecreeps:raygun/raygun3",
+      "morecreeps:raygun/raygun4"
+    ]
+  },
   "g_ambient": {
     "subtitle": "morecreeps.subtitle.g_ambient",
     "sounds": [
@@ -105,6 +114,35 @@
       "morecreeps:g/gdeath1",
       "morecreeps:g/gdeath2",
       "morecreeps:g/gdeath3"
+    ]
+  },
+  "floob_ambient": {
+    "subtitle": "morecreeps.subtitle.floob",
+    "sounds": [
+      "morecreeps:floob/floob1",
+      "morecreeps:floob/floob2",
+      "morecreeps:floob/floob3",
+      "morecreeps:floob/floob4",
+      "morecreeps:floob/floob5",
+      "morecreeps:floob/floob6"
+    ]
+  },
+  "floob_death": {
+    "subtitle": "morecreeps.subtitle.floob_death",
+    "sounds": [
+      "morecreeps:floob/floobdeath1",
+      "morecreeps:floob/floobdeath2",
+      "morecreeps:floob/floobdeath3"
+    ]
+  },
+  "floob_hurt": {
+    "subtitle": "morecreeps.subtitle.floob_hurt",
+    "sounds": [
+      "morecreeps:floob/floobhurt1",
+      "morecreeps:floob/floobhurt2",
+      "morecreeps:floob/floobhurt3",
+      "morecreeps:floob/floobhurt4",
+      "morecreeps:floob/floobhurt5"
     ]
   }
 }

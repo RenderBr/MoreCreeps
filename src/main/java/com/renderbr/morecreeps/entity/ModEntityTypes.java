@@ -1,12 +1,7 @@
 package com.renderbr.morecreeps.entity;
 
 import com.renderbr.morecreeps.MoreCreeps;
-import com.renderbr.morecreeps.entity.custom.BulletEntity;
-import com.renderbr.morecreeps.entity.custom.CamelJockeyEntity;
-import com.renderbr.morecreeps.entity.custom.LetterGEntity;
-import com.renderbr.morecreeps.entity.custom.ThiefEntity;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
+import com.renderbr.morecreeps.entity.custom.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -37,6 +32,17 @@ public class ModEntityTypes {
             () -> EntityType.Builder.<LetterGEntity>of(LetterGEntity::new, MobCategory.MONSTER)
                     .sized(1F, 2F)
                     .build(MoreCreeps.MODID + ":letterg"));
+
+    public static final RegistryObject<EntityType<RayEntity>> RAY = ENTITY_TYPES.register("ray",
+            () -> EntityType.Builder.<RayEntity>of(RayEntity::new, MobCategory.MISC)
+                    .sized(1F, 2F)
+                    .build(MoreCreeps.MODID + ":ray"));
+
+    public static final RegistryObject<EntityType<FloobEntity>> FLOOB = ENTITY_TYPES.register("floob",
+            () -> EntityType.Builder.<FloobEntity>of(FloobEntity::new, MobCategory.MONSTER)
+                    .sized(1F, 2F)
+                    .build(MoreCreeps.MODID + ":floob"));
+
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

@@ -2,12 +2,10 @@ package com.renderbr.morecreeps.event;
 
 import com.renderbr.morecreeps.MoreCreeps;
 import com.renderbr.morecreeps.entity.ModEntityTypes;
-import com.renderbr.morecreeps.entity.client.BulletModel;
-import com.renderbr.morecreeps.entity.client.CamelJockeyModel;
-import com.renderbr.morecreeps.entity.client.ThiefModel;
-import com.renderbr.morecreeps.entity.client.ThiefRenderer;
+import com.renderbr.morecreeps.entity.client.*;
 import com.renderbr.morecreeps.entity.custom.BulletEntity;
 import com.renderbr.morecreeps.entity.custom.CamelJockeyEntity;
+import com.renderbr.morecreeps.entity.custom.FloobEntity;
 import com.renderbr.morecreeps.entity.custom.ThiefEntity;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.CubeDeformation;
@@ -38,6 +36,7 @@ public class ModEvents {
             event.put(ModEntityTypes.CAMEL_JOCKEY.get(), CamelJockeyEntity.createAttributes().build());
             event.put(ModEntityTypes.THIEF.get(), ThiefEntity.createAttributes().build());
             event.put(ModEntityTypes.LETTER_G.get(), ThiefEntity.createAttributes().build());
+            event.put(ModEntityTypes.FLOOB.get(), FloobEntity.createAttributes().build());
 
         }
 
@@ -46,6 +45,9 @@ public class ModEvents {
             event.registerLayerDefinition(BulletModel.LAYER_LOCATION, BulletModel::createBodyLayer);
             event.registerLayerDefinition(CamelJockeyModel.LAYER_LOCATION, CamelJockeyModel::createBodyLayer);
             event.registerLayerDefinition(ThiefModel.LAYER_LOCATION, ThiefModel::createBodyLayer);
+            event.registerLayerDefinition(RayModel.LAYER_LOCATION, RayModel::createBodyLayer);
+
+
         }
     }
 

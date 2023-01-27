@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import com.renderbr.morecreeps.MoreCreeps;
 import com.renderbr.morecreeps.entity.custom.BulletEntity;
+import com.renderbr.morecreeps.entity.custom.RayEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;

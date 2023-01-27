@@ -19,6 +19,8 @@ public class ModItems {
     public static final RegistryObject<Item> BLORP_COLA = ITEMS.register("blorpcola", () -> new BlorpColaItem(new Item.Properties().requiredFeatures()));
     public static final RegistryObject<Item> CAVEMAN_CLUB = ITEMS.register("club", () -> new CavemanClubItem(Tiers.IRON, 6, -3.1F, new Item.Properties().requiredFeatures()));
 
+    public static final RegistryObject<Item> RAYGUN = ITEMS.register("raygun", () -> new RaygunItem(new Item.Properties().requiredFeatures()));
+    public static final RegistryObject<Item> RAY = ITEMS.register("ray", () -> new RayItem(new Item.Properties().requiredFeatures()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

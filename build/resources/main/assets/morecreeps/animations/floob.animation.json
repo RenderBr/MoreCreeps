@@ -1,0 +1,47 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.FloobModel.idle": {
+			"loop": true,
+			"animation_length": 0.33333,
+			"bones": {
+				"chest": {
+					"position": {
+						"0.0": {
+							"vector": [0.1, 0, 0]
+						},
+						"0.1667": {
+							"vector": [-0.1, 0, 0]
+						},
+						"0.3333": {
+							"vector": [0.1, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.FloobModel.attack": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"leftarm": {
+					"rotation": {
+						"0.0": {
+							"vector": [-87.5, 0, 0]
+						},
+						"0.2917": {
+							"vector": [-92.5, 0, 0]
+						},
+						"0.5": {
+							"vector": [-97.86, 0, 0]
+						}
+					},
+					"position": {
+						"vector": [0, 4, -5]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
